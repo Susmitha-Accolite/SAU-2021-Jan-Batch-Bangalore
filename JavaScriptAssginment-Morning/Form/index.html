@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script> 
+</head>
+<body>
+<h1 id="title">Form</h1>
+<div id="form-outer">
+  <p id="description"> Personal Details </p>
+
+  <form id="form" onsubmit="validateEmail(); return false">
+
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label">First Name: </label>
+      </div>
+      <div class='rightTab'>
+        <input type="text" id="first-name" class="input-field" placeholder="Enter your first name" required>
+      </div>
+
+      <br>
+
+      <div class="labels">
+        <label id="name-label">Last Name: </label>
+      </div>
+      <div class='rightTab'>
+        <input type="text" id="last-name" class="input-field" placeholder="Enter your last name" required>
+      </div>
+    </div>
+
+    <!-- email -->
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label">Email: </label>
+      </div>
+      <div class='rightTab'>
+        <input type="text" id="email" class="input-field" placeholder="Enter your email" required>
+      </div>
+    </div>
+
+    <!-- gender -->
+    <div class="rowTab">
+        <div class="labels">
+            <label id = "gender">Gender</label>
+        </div>
+        <div class="rightTab">
+            <ul style ="list-style: none;">
+                <li class="radio"><label>Female<input name="radio-buttons" value="1" type="radio" class="userInvolvement" ></label></li>
+                <li class="radio"><label>Male<input name="radio-buttons" value="2" type="radio" class="userInvolvement" ></label></li>
+              </ul>
+        </div>
+    </div>
+
+    <!-- JOb -->
+    <div class="rowTab">
+      <div class="labels">
+        <label id="role">Job Role</label>
+      </div>
+      <div class='rightTab'>
+        <select id="dropdown">
+        <option>Select an option</option>
+          <option >Software Engineer</option>
+          <option >Support Engineer</option>
+          <option >HR Manager </option>
+          <option >Other</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- company -->
+    <div class="rowTab">
+      <div class="labels">
+        <label id="comany-label"> Company Name: </label>
+      </div>
+      <div class='rightTab'>
+        <input type="text" id="company" placeholder="Enter your company name" required>
+      </div>
+    </div>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+</body>
+</html>
