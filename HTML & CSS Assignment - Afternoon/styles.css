@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
 body {
-    background-image: linear-gradient(to left,  #ffc93c, #ff9a3c);
+    background-color: #f9e79f;
 }
 
 * {
@@ -23,7 +23,7 @@ body {
     position: fixed;
     width: 100%;
     text-align: right;
-    background-image: linear-gradient(to left,  #ffc93c, #ff9a3c);
+    background-image: linear-gradient(to left,  #fdff70, #e9dd33ea, #ffc93c, #ff9a3c, #fd7543);
   }
   .nav-bar > ul > li {
     display: inline-block;
@@ -142,14 +142,14 @@ a{
   text-decoration: none;
   display: inline-block;
   font-weight: bold;
-  border: 2px solid #90C695;
+  border: 2px solid #ff9a3c;
   border-radius: 100%;
   width: 100px;
   height:100px;
   line-height: 100px;
   margin: 0 35px 45px 35px;
   background-color: #E0FFFF;
-  color: #008080;
+  color:black;
   margin-top:30px;
 }
 .contact-details:hover {
