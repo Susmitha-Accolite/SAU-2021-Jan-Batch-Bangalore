@@ -2,15 +2,12 @@ function printDetails() {
     var firstName = document.getElementById("first-name").value;
     var lastName = document.getElementById("last-name").value;
     var email = document.getElementById("email").value;
-    var gender = document.getElementById("gender").value;
+    var gender;
+    if(document.getElementById("female").checked) gender="Female";
+    else gender = "Male";
     var job = document.getElementById("dropdown").value;
-    let details = {
-        'FirstName' : firstName,
-        'LastName' : lastName,
-        'Email': email,
-        'Gender': gender,
-        'Job Role': job
-    };
+    let details = JSON.parse(JSON.stringify('{"firstName" :' + firstName + ', "lastName" : ' + lastName + ' ,"emailId" : ' +email +
+    ', "gender" : '+ gender + ', "jobRole" : ' + job + '}'));
     console.log(details);
 }
 
