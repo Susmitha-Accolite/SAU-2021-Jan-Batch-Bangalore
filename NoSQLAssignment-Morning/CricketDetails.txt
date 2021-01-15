@@ -1,0 +1,80 @@
+insert into CricketDetails
+values
+   ("1",{
+    "Name": "Virat",
+    "TeamName": "India",
+    "MatchesPlayed": 12,
+    "RunsScored": 500
+  }
+  ),
+   ("2",{
+    "Name": "SPD Smith",
+    "TeamName": "Australia",
+    "MatchesPlayed": 10,
+    "RunsScored": 350
+  }
+  ),
+   ("3",{
+    "Name": "Kock",
+    "TeamName": "South Africa",
+    "MatchesPlayed": 11,
+    "RunsScored": 455
+  }
+  ),
+   ("4",{
+    "Name": "MS Dhoni",
+    "TeamName": "India",
+    "MatchesPlayed": 9,
+    "RunsScored": 200
+  }
+  ),
+   ("5",{
+    "Name": "DA Warner",
+    "TeamName": "Australia",
+    "MatchesPlayed": 10,
+    "RunsScored": 647
+  }
+  ),
+   ("6",{
+    "Name": "Taylor",
+    "TeamName": "New Zealand",
+    "MatchesPlayed": 9,
+    "RunsScored": 387
+  }
+  ),
+   ("7",{
+    "Name": "HE van der Dussen",
+    "TeamName": "South Africa",
+    "MatchesPlayed": 9,
+    "RunsScored": 311
+  }
+  ),
+   ("8",{
+    "Name": "HM Amla",
+    "TeamName": "South Africa",
+    "MatchesPlayed": 7,
+    "RunsScored": 203
+  }
+  ),
+   ("9",{
+    "Name": "JDS Neesham",
+    "TeamName": "New Zealand",
+    "MatchesPlayed": 10,
+    "RunsScored": 232
+  }
+  ),
+   ("10",{
+    "Name": "JE Root",
+    "TeamName": "England",
+    "MatchesPlayed": 11,
+    "RunsScored": 556
+  }
+   )
+
+   select * from CricketDetails where RunsScored > 400
+
+    select * from CricketDetails where RunsScored > 300
+
+create primary index on CricketDetails
+drop primary index on CricketDetails
+create index  sampleIndex on CricketDetails (sampleIndex);
