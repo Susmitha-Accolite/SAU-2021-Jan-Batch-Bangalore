@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <p id="header">Enter your details</p>
+    <form id="form" onsubmit="setDetails(); return false">
+        Roll No.: <input type="text" id="rollno" placeholder="Enter your roll number"> <br>
+        First Name: <input type="text" id="first-name" placeholder="Enter your first name"> <br>
+        Last Name: <input type="text" id="last-name" placeholder="Enter your last name"><br>
+        Email: <input type="text" id = "email" placeholder="Enter your email ID"><br>
+        Date of Birth <input type="date" id = "dob"><br>
+        <div id="gender">
+        Gender: 
+        <input id = "female" type="radio" name="gender" value="female" >Female
+       <input id="male" type="radio" name="gender" value="male" >Male
+       </div>
+
+        Occupation: <input id=occupation type="text" placeholder="Enter occupaiton (Not mandatory)">
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <br>
+    <br>
+    <hr>
+<h4 style="text-align: center;">The submitted details are following</h4>
+    <form id="print" name="myform" onsubmit="printDetails(); return false;">
+        <input id="text" type="text" name="roll" placeholder="Enter the rollno">
+        <button type="submit" id="submit">Submit</button>
+    </form>
+    <div>
+        <h3 id="r"></h3>
+        <h3 id="fname"></h3>
+        <h3 id="lname"></h3>
+        <h3 id="e"></h3>
+        <h3 id="d"></h3>
+        <h3 id="gen"></h3>
+        <h3 id="occ"></h3>
+    </div>
+
+</body>
+</html>
