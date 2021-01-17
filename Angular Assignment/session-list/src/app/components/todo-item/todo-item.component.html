@@ -1,0 +1,10 @@
+<div>
+    <input (change)="display()" type="checkbox" />
+    {{ todo.title }}
+    <div *ngIf="onShow()" class="description">
+        <p><b>UserID:</b> {{todo.userId}}</p>
+        <p><b>ID:</b> {{todo.id}}</p>
+        <p><b>Title:</b> {{todo.title}}</p>
+        <p><b>completed:</b> {{todo.completed}}</p>
+    </div>
+</div>

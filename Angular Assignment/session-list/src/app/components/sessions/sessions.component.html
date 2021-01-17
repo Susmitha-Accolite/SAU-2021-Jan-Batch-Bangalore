@@ -1,0 +1,8 @@
+<app-header></app-header>
+<app-add-session (addSession)="addSession($event)"></app-add-session>
+<app-session-item
+*ngFor="let session of sessions" [session]="session"
+(deleteSession)="deleteSession($event)"
+(editSession)="editSession($event)"
+>
+</app-session-item>

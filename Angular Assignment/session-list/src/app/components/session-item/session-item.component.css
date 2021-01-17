@@ -1,0 +1,22 @@
+.div-container {
+    background: #f4f4f4;
+    padding: 10px;
+    border-bottom: 1px #ccc dotted;
+}
+
+
+.del, .edit{
+    background: #EC7063;
+    color: black;
+    border: none;
+    padding: 5px 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+    margin-right: 5px;
+}
+
+.edit {
+    background: #AED6F1;
+    border-radius: 10%;
+}
