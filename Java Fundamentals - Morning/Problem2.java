@@ -25,6 +25,8 @@ public class Problem2 {
         catch(Exception e) {
             System.out.println(e);
             System.out.println("Exception Occured");
+        } finally {
+            System.out.println("Completed Try-catch block");
         }
     }
 }
